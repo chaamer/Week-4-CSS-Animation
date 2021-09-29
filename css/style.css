@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@600&family=Yaldevi:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: hsl(202, 52%, 25%);
+    overflow: hidden;
+}
+
+
+.conteiner {
+    width: 45%;
+    margin:  32px auto;
+    
+}
+
+.header {
+    height: 250px;
+    text-align: center;
+}
+
+.header h1 {
+    color: wheat;
+    font-size: 3.5rem;
+    font-family: 'Gemunu Libre', sans-serif;
+    position: relative;
+    animation: header;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    /*animation-iteration-count: infinite;*/
+
+}
+
+@keyframes header {
+    0% {top: -250px}
+    100% {top: 0}
+}
+
+.main {
+    color: white;
+    font-family: 'Yaldevi', sans-serif;
+    line-height: 1.5rem;
+}
+
+.text-left {
+    position: relative;
+    animation: textLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out; /*teeb sujuvamaks*/ 
+    
+}
+@keyframes textLeft {
+    0% {left: -1000px}
+    85% {left: 50px}
+    100% {left: 0}
+    
+}
+
+.text-right {
+    text-align: right;
+    margin-top: 32px;
+    position: relative;
+    animation: textRight;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes textRight {
+    0% {right: -1000px}
+    85% {right: 50px}
+    100% {right: 0}
+} 
+
+.footer {
+    text-align: center;
+
+}
+
+.btn {
+    opacity: 0;
+    border: 2px solid white;
+    display: inline-block;
+    font-family: 'Yaldevi', sans-serif;
+    color: white;
+    font-size: 2rem;
+    margin: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    animation: aniBtn;
+    animation-duration: 7s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    
+
+
+}
+@keyframes aniBtn {
+    0% {opacity: 0;}
+    100% {opacity: 1;} 
+}
+
+
